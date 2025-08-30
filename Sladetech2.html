@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SladeTech | Tech Solutions</title>
+  <style>
+    :root {
+      --bg-color: #0a0a0a;
+      --text-color: #e6e6e6;
+      --header-bg: #111;
+      --accent-color: #00ff99;
+      --input-bg: #111;
+      --input-text: #fff;
+      --button-bg: #00ff99;
+      --button-text: #000;
+      --hover-color: #00cc77;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background: var(--header-bg);
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: var(--accent-color);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    nav a {
+      color: var(--accent-color);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--accent-color);
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background: var(--header-bg);
+      border-left: 3px solid var(--accent-color);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid var(--accent-color);
+      border-radius: 5px;
+      background: var(--input-bg);
+      color: var(--input-text);
+      transition: all 0.3s ease;
+    }
+
+    form button {
+      background: var(--button-bg);
+      color: var(--button-text);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: var(--hover-color);
+    }
+
+    footer {
+      background: var(--header-bg);
+      color: #888;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      border-top: 2px solid var(--accent-color);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: var(--accent-color);
+      letter-spacing: 2px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--accent-color);
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #fff;
+    }
+
+    /* Dark/Light Mode Styles */
+    body.light-mode {
+      --bg-color: #f4f4f4;
+      --text-color: #111;
+      --header-bg: #fff;
+      --accent-color: #0077cc;
+      --input-bg: #fff;
+      --input-text: #111;
+      --button-bg: #0077cc;
+      --button-text: #fff;
+      --hover-color: #005fa3;
+    }
+
+    /* Mode toggle button */
+    #modeToggle {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px 15px;
+      background: var(--accent-color);
+      color: var(--button-text);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    #modeToggle:hover {
+      background: var(--hover-color);
+    }
+  </style>
+</head>
+<body>
+
+  <button id="modeToggle">🌞 Light Mode</button>
+
+  <header>
+    <div class="logo">SladeTech</div>
+    <h1>Slade Ndeka</h1>
+    <p>"Innovative Tech Solutions for Your Future" ⚡</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to <strong>SladeTech</strong>. I provide modern and reliable tech solutions to help individuals and small businesses build their digital presence and solve technical challenges.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Slade Ndeka, a passionate developer and tech enthusiast. I specialize in creating simple yet powerful digital solutions using programming and web technologies.</p>
+    <p>With experience in C, JavaScript, PHP, and web development, I aim to transform ideas into digital reality while continuously learning and exploring future technologies like AI.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <ul>
+      <li><strong>Website Development:</strong> Responsive websites using HTML, CSS, JavaScript, and PHP.</li>
+      <li><strong>Tech Support:</strong> Troubleshooting and solving basic IT problems for individuals/small businesses.</li>
+      <li><strong>Programming Tutoring:</strong> Helping beginners understand coding fundamentals.</li>
+      <li><strong>AI & Automation (Future):</strong> Exploring smart solutions for tomorrow’s challenges.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Work With Me</h2>
+    <p><strong>Phone:</strong> 0653563774</p>
+    <p><strong>Email:</strong> sladendeka12@gmail.com</p>
+    <div class="social">
+      <p>Follow me:</p>
+      <a href="https://instagram.com/slade_ndek" target="_blank">Instagram</a> |
+      <a href="https://tiktok.com/@slade ndeka" target="_blank">TikTok</a>
+    </div>
+    <br>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Request Service</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 SladeTech | Tech Solutions</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('modeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      if(document.body.classList.contains('light-mode')){
+        toggleButton.textContent = "🌙 Dark Mode";
+      } else {
+        toggleButton.textContent = "🌞 Light Mode";
+      }
+    });
+  </script>
+
+</body>
+</html>
